@@ -1,0 +1,44 @@
+<DOCTYPE! html>
+<html>
+
+<head>
+<title>importing text from a txt file:)</title>
+<head>
+
+<style>
+body {
+	background-image: url("https://media0.giphy.com/media/d9QiBcfzg64Io/giphy.gif");
+	color: yellow;
+	}
+	h1 {font-size 40pt;
+		color: yellow;
+		font-family: Comic Sans MS;}
+	p {font-size 35pt;
+		color: yellow;
+		font-family: Comic Sans MS;}
+	#imported {
+          width:250px;
+          height:158px;
+          position:absolute;
+          color: yellow;
+          font-family: Comic Sans MS;
+          }
+		
+</style>
+
+<body>
+		<h1>Top Daily scores</h1>
+		
+		<script>
+			fetch('https://products.groupdocs.app/viewer/view?file=fca124b5-3fb5-404e-8ea3-86d4b5b604a6/scores.txt')
+	  .then(response => response.text())
+	  .then(data => {
+		// Do something with your data
+		console.log(data);
+	  });
+	  </script>
+
+		
+		
+</body>
+</html>
